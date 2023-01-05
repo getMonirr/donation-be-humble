@@ -6,6 +6,9 @@
     --background-2: #FFEEEE;
     --background-3: #FFF4D6;
     --text-color: #FFFFFF;
+    --text-color2:#858585;
+    --ammount-bg: #FAFAFA;
+    --input-color: #DADADA;
 }
 * {
     margin: 0;
@@ -49,7 +52,68 @@ body {
     font-size: 5em;
     margin-bottom: 30px;
 }
-.hero-description {
+.hero-description ,.section-description{
     font-size: 1.5em;
     line-height: 40px;
+}
+/* section */
+main {
+    margin: 0 250px;
+}
+section{
+    margin-top: 170px;
+}
+.donate-ammount {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-title {
+    font-size: 4em;
+    margin-bottom: 30px;
+}
+.section-description {
+    color: var(--text-color2);
+}
+.ammount {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 40px;
+}
+.ammount p{
+    background-color: var(--ammount-bg);
+    padding: 50px 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--text-color2);
+    border-radius: 10px;
+    border: 3px solid transparent;
+}
+.ammount p:hover, .ammount p.active {
+    border: 3px solid var(--primary);
+    color: var(--primary);
+    background-color: var(--background-2);
+}
+.donate-ammount input {
+    width: 78%;
+    border: 0;
+    border-bottom: 2px solid var(--input-color);
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.8em;
+}
+.donate-ammount input::placeholder {
+    line-height: 90px;
+    color: var(--input-color);
+}
+.donate-ammount input:focus {
+    outline: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
