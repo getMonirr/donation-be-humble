@@ -1,119 +1,176 @@
 /* Default setup */
 :root {
-    --primary: #FF5959;
-    --secondary: #FFEEEE;
-    --background-1: #EDF5F6;
-    --background-2: #FFEEEE;
-    --background-3: #FFF4D6;
-    --text-color: #FFFFFF;
-    --text-color2:#858585;
-    --ammount-bg: #FAFAFA;
-    --input-color: #DADADA;
+  --primary: #ff5959;
+  --secondary: #ffeeee;
+  --background-1: #edf5f6;
+  --background-2: #ffeeee;
+  --background-3: #fff4d6;
+  --text-color: #ffffff;
+  --text-color2: #858585;
+  --ammount-bg: #fafafa;
+  --input-color: #dadada;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Inter',"Open sans";
-    font-style: normal;
-    background-color: var(--text-color);
+  font-family: "Inter", "Open sans";
+  font-style: normal;
+  background-color: var(--text-color);
 }
 .btn-primary {
-    margin-top: 40px;
-    padding: 20px 15px;
-    border-radius: 5px;
-    border: 0;
-    background-color: var(--primary);
-    color: var(--text-color);
-    font-size: 24px;
-    cursor: pointer;
+  margin-top: 40px;
+  padding: 20px 15px;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--primary);
+  color: var(--text-color);
+  font-size: 24px;
+  cursor: pointer;
 }
 /* header/hero */
 .header {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(169, 169, 169, 0.5), rgb(0,0,0,0.8)), url("../images/donation13.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(169, 169, 169, 0.5), rgb(0, 0, 0, 0.8)),
+    url("../images/donation13.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .hero {
-    width: 60%;
-    text-align: center;
-    color: var(--text-color);
+  width: 60%;
+  text-align: center;
+  color: var(--text-color);
 }
 .hero-title {
-    font-size: 5em;
-    margin-bottom: 30px;
+  font-size: 5em;
+  margin-bottom: 30px;
 }
-.hero-description ,.section-description{
-    font-size: 1.5em;
-    line-height: 40px;
+.hero-description,
+.section-description {
+  font-size: 1.5em;
+  line-height: 40px;
 }
 /* section */
 main {
-    margin: 0 250px;
+  margin: 0 250px;
 }
-section{
-    margin-top: 170px;
+section {
+  margin-top: 170px;
 }
-.donate-ammount {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.donate-ammount,.center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .section-title {
-    font-size: 4em;
-    margin-bottom: 30px;
+  font-size: 4em;
+  margin-bottom: 30px;
 }
 .section-description {
-    color: var(--text-color2);
+  color: var(--text-color2);
 }
 .ammount {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    gap: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  gap: 40px;
 }
-.ammount p{
-    background-color: var(--ammount-bg);
-    padding: 50px 25px;
-    font-size: 2.5em;
-    font-weight: 700;
-    color: var(--text-color2);
-    border-radius: 10px;
-    border: 3px solid transparent;
+.ammount p {
+  background-color: var(--ammount-bg);
+  padding: 50px 25px;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--text-color2);
+  border-radius: 10px;
+  border: 3px solid transparent;
+  transition: 0.3s all ease-in;
 }
-.ammount p:hover, .ammount p.active {
-    border: 3px solid var(--primary);
-    color: var(--primary);
-    background-color: var(--background-2);
+.ammount p:hover,
+.ammount p.active {
+  border: 3px solid var(--primary);
+  color: var(--primary);
+  background-color: var(--background-2);
 }
 .donate-ammount input {
-    width: 78%;
-    border: 0;
-    border-bottom: 2px solid var(--input-color);
-    margin-top: 50px;
-    text-align: center;
-    padding: 20px;
-    font-size: 1.8em;
+  width: 78%;
+  border: 0;
+  border-bottom: 2px solid var(--input-color);
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.8em;
 }
 .donate-ammount input::placeholder {
-    line-height: 90px;
-    color: var(--input-color);
+  line-height: 90px;
+  color: var(--input-color);
 }
 .donate-ammount input:focus {
-    outline: 0;
+  outline: 0;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
+}
+/* donate-plane */
+.donate-plane {
+    text-align: center;
+}
+.donate-plane .plan-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    gap: 30px;
+}
+.plan-container {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+.bg-1{
+    background-color: var(--background-1);
+}
+.bg-2{
+    background-color: var(--background-2);
+}
+.bg-3{
+    background-color: var(--background-3);
+}
+.donate-plane .plan-container .plan {
+    padding: 30px;
+    border-radius: 5px;
+}
+.plan .section-description {
+    line-height: unset;
+    margin-top: 30px;
+}
+.plan .plan-title {
+    font-size: 2em;
+}
+.plan img {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+/* blog */
+.blog {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+.blog img {
+    height: 600px;
+    width: 650px;
+    border-radius: 10px;
+    object-fit: cover;
 }
